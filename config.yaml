@@ -35,7 +35,7 @@ markup:
       unsafe: true
       xHTML: false
 
-theme: "Academia Hugo"
+theme: "academia-hugo"
 baseURL: "https://familypay.onrender.com/"
 languageCode: "sv-SE"
 title: "FamilyPay"

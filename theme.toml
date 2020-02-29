@@ -1,4 +1,4 @@
-name = "Academia Hugo"
+name = "academia-hugo"
 license = "MIT"
 licenselink = "https://github.com/themefisher/academia-hugo/blob/master/LICENSE.md"
 description = "The website builder for Hugo. Build *anything* with widgets and deploy with one click! Fully personalize your site with themes, plugins, and language packs."
