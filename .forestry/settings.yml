@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/"
-webhook_url: 
+webhook_url: https://github.com/ulfsv/Academia-hugo/settings/hooks/187911790
 sections:
 - type: directory
   path: content
