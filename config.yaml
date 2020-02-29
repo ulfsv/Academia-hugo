@@ -1,0 +1,98 @@
+# exampleSite/config.yaml
+#
+# Configuration file for the demonstration of the Hugo-smorg theme,
+# mobile-first, responsive theme for the Hugo static site generator.
+# https://gohugo.io/
+
+# IMPORTANT:
+# themesDir is needed only to run exampleSite in-place; comment out or delete
+# this line for regular theme use:
+#themesDir: "../.."
+
+# Mandatory $.Site Variables ---------------------------------------------
+# Site variables are built-in to the Hugo application and can be accessed using
+# the {{ $.Site.variablename }} template directive.
+#
+# Every site needs these few: theme, baseURL, languageCode and title
+# Name of the theme your Hugo site uses; leave this in place:
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xHTML: false
+
+theme: "academia-hugo"
+baseURL: "https://familypay.onrender.com"
+languageCode: "sv-SE"
+title: "FamilyPay"
+
+
+# Optional $.Site Variables ----------------------------------------------
+# More info on Site variables; https://gohugo.io/getting-started/configuration/
+#
+# Optional variables can be edited or commented out as desired.
+#
+# author name appears in RSS and Atom feeds;
+# author email address is optional and can be # commented out.
+author:
+    name: "FamilyPay"
+    email: "info@familypay.se"
+
+# copyright appears in the default site footer
+copyright: "&copy; FamilyPay AB 2020"
+
+# metaDataFormat for new content pages generated with the `hugo new` command if
+# not otherwise specified by an archetype. Hugo-Smorg theme examples all use
+# the easy to understand and write YAML format.
+metaDataFormat: yaml
+
+# summaryLength limits the number of words included in auto-generated page
+# summaries Manual control of summaries is possible using the <!--more-->
+# directive in content files. https://gohugo.io/content-management/summaries/
+summaryLength: 20
+
+# paginate sets the maximum number of items (pages) in a page listing.
+paginate: 2  # set very low for demo purposes only, 5 - 10 or more would be reasonable
+
+# GoogleAnalytics offers deep insight into how visitors use your site. It's
+# optional, and free: https://www.google.com/analytics/analytics/
+# Only uncomment if you have a GA UD:
+# GoogleAnalytics: "UA-102282722-1" # add your UA-nnn-nnnnnnnn ID and uncomment
+
+# Disqus is a popular commenting system; to get an account visit:
+# https://disqus.com/admin/create/`
+# Uncommenting will result in Disqus capability extended to each blog post.
+# disqusShortname: "yourdiscussshortname"
+
+# Code oriented optional features:
+# pygments variables tune code syntax highlighting features Hugo provides
+pygmentsUseClasses: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsCodefences: true
+
+# enableGitInfo populates a .GitInfo object for each git-managed page
+# The theme does not currently make use of the information.
+enableGitInfo: false
+
+# enableRobotsTXT: <false> enables generation of site robots.txt from
+# front-matter directives. Many sites may prefer to create a robots.txt file in
+# the site content directory.
+enableRobotsTXT: true
+
+# enableEmoji: <false> enables Emoji rendering see:
+# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+enableEmoji: false
