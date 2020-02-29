@@ -15,3 +15,5 @@ fields:
   config:
     required: false
   label: textfield
+pages:
+- content/test.md
