@@ -1,4 +1,17 @@
 ---
 label: testsida
 hide_body: false
-fields: []
+fields:
+- name: test
+  type: blocks
+  label: test
+  template_types:
+  - testsida
+  config:
+    min: 
+    max: 
+- name: textfield
+  type: text
+  config:
+    required: false
+  label: textfield
